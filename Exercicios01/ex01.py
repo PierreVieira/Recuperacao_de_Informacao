@@ -54,7 +54,7 @@ def indice_prim_valor_igual(lista1: list, lista2: list):
     :return: Posição na lista1 do primeiro valor igual ao da lista2 ou None caso essa posição não exista.
     """
     for n in lista2:  # Para um número 'n' na lista 2
-        try:  # tente
+        try:  # Tente
             return lista1.index(n)  # Retorne a primeira posição de n em lista 1
         except ValueError:  # Exceto se ocorrer um ValueError
             pass  # Não faça nada
