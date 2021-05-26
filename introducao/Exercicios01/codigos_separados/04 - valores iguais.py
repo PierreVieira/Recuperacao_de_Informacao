@@ -12,6 +12,6 @@ def valores_iguais(lista1, lista2):
 if __name__ == '__main__':
     lista1 = [i // 2 for i in range(50)]
     lista2 = [i // 4 for i in range(50)]
-    print(f'Lista 1: \033[1;33m{lista1}\033[m')
-    print(f'Lista 2: \033[1;33m{lista2}\033[m')
-    print(f'Valores iguais entre as listas:\n\033[1;31m{valores_iguais(lista1, lista2)}\033[m')
+    print(f'Lista 1: {lista1}')
+    print(f'Lista 2: {lista2}')
+    print(f'Valores iguais entre as listas: {valores_iguais(lista1, lista2)}')

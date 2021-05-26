@@ -17,9 +17,9 @@ if __name__ == '__main__':
     lista1 = [i // 4 for i in range(50)]
     lista2 = [(i + 8) // 5 for i in range(50)]
     posicao = indice_prim_valor_igual(lista1, lista2)
-    print(f'Lista 1: \033[1;33m{lista1}\033[m')
-    print(f'Lista 2: \033[1;33m{lista2}\033[m')
+    print(f'Lista 1: {lista1}')
+    print(f'Lista 2: {lista2}')
     if posicao is not None:
-        print(f'A posição na lista 1 do primeiro valor igual à lista 2 é \033[1;31m{posicao}\033[m')
+        print(f'A posição na lista 1 do primeiro valor igual à lista 2 é {posicao}')
     else:
         print('A lista 1 e a lista 2 não tem valores iguais.')

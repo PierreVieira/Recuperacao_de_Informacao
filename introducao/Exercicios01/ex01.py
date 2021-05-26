@@ -3,12 +3,10 @@ def maior(a, b):
     Retorna o maior número entre 'a' e 'b'.
     @author: Pierre Vieira
     """
-    if a > b:  # Se 'a' maior que 'b'
-        return a  # Retorne 'a'
-    return b  # Retorne 'b'
+    return a if a > b else b  # Retorne 'a' se 'a' maior que 'b', senão retorne 'b'
 
 
-def soma(lista, x=0.0):
+def soma(lista, x=0):
     """
     @author: Pierre Vieira
     :param lista: Lista de valores numéricos.

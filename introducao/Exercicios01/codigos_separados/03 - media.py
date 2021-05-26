@@ -14,5 +14,5 @@ def media(lista):
 
 if __name__ == '__main__':
     lista = [i + 1 for i in range(10)]
-    print(f'Lista: \033[1;33m{lista}\033[m')
-    print(f'A média dos termos da lista vale \033[1;31m{media(lista)}\033[m')
+    print(f'Lista: {lista}')
+    print(f'A média dos termos da lista vale {media(lista)}')
