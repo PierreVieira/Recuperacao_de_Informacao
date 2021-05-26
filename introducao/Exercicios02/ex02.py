@@ -1,7 +1,7 @@
 from random import randint
 
 
-class Pessoa():
+class Pessoa:
     """
     @author: Pierre Vieira
     """
@@ -34,7 +34,7 @@ class Autor(Pessoa):
 
     @property
     def nome_como_citado(self):
-        return self.nome_como_citado
+        return self._nome_como_citado
 
     # Métodos dunder
     def __str__(self):
@@ -44,7 +44,7 @@ class Autor(Pessoa):
         return self.__str__()
 
 
-class Livro():
+class Livro:
     def __init__(self, titulo: str, ano: int, autores=None):
         if autores is None:  # Se não foi passado os autores como argumento para a função
             autores = []  # Os autores são uma lista vazia
@@ -75,11 +75,12 @@ class Livro():
         return self.__str__()
 
 
-class Biblioteca():
+class Biblioteca:
     def __init__(self, livros: list):
         self._livros_por_autor = self._calcular_livros_por_autor(livros)
 
-    def _calcular_livros_por_autor(self, livros: list):
+    @staticmethod
+    def _calcular_livros_por_autor(livros: list):
         """
         @author: Pierre Vieira
         :param livros: lista de livros
